@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Matematika</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table,tr, td {
+        border: solid black 1px;
+        padding: 6px;
+        border-collapse: collapse;
+
+    }
+
+    tr td input {
+        background-color: inherit;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .kotak {
+        width: 70%;
+        background-color: rgb(171, 197, 207);
+        margin: auto;
+    }
+
+    .operator {
+        margin: 10px;
+    }
+
+    .operator button {
+        margin: 10px;
+        width:max-content;
+        border: none;
+        color: white;
+        background-color: rgb(95, 210, 255);
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .operator button:hover {
+        color: white;
+        background-color: rgb(97, 182, 235);
+    }
+
+    .operator button:active {
+        color: rgb(255, 255, 255);
+        background-color: rgb(2, 78, 126);
+    }
+
+    #jawaban {
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: inherit;
+    }
+
+    #jawaban:hover {
+        background-color: orange;
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Latihan Matematika</h1>
+        <div class="operator">
+            <input type="checkbox" onclick="Penjumlahan()" class="Penjumlahan"> Penjumlahan | 
+            <input type="checkbox" onclick="Pengurangan()" class="Pengurangan"> Pengurangan | 
+            <input type="checkbox" onclick="Perkalian()" 
+            class="Perkalian"> Perkalian | 
+            <input type="checkbox" onclick="Pembagian()" 
+            class="Pembagian"> Pembagian 
+            <!-- <input type="checkbox" onclick="Hybrid()"> Hybrid |  -->
+            <br><button type="submit" onclick="apply()">apply</button>
+        </div>
+        <div class="kotak">
+            <table>
+                
+            </table>
+        </div>
+
+    </div>
+    <br>
+</body>
+<script src="script.js"></script>
+
+</html>
